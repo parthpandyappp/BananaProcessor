@@ -1,0 +1,28 @@
+body {
+    background-color: #FBBF24;
+}
+
+textarea {
+    display: block;
+    margin: 1rem;
+    height: 13rem;
+    width: 50rem;
+    text-align: center;
+    border-radius: 1.1rem;
+    border-color: black;
+    padding: 4rem;
+}
+
+#output {
+    border: 1px solid black;
+    height: 13rem;
+    width: 50rem;
+    border-radius: 1.1rem;
+    background-color: white;
+    padding: 4rem;
+}
+
+li {
+    display: inline;
+    margin: 1rem;
+}

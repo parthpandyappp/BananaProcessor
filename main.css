@@ -11,6 +11,9 @@ textarea {
     border-radius: 1.1rem;
     border-color: black;
     padding: 4rem;
+    min-width:500px; 
+    max-width:100%;
+    min-height:50px;
 }
 
 #output {
@@ -20,6 +23,9 @@ textarea {
     border-radius: 1.1rem;
     background-color: white;
     padding: 4rem;
+    min-width:500px; 
+    max-width:100%;
+    min-height:50px;
 }
 
 li {

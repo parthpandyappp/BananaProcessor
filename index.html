@@ -12,6 +12,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:300,400" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
 
     <title>Banana Processor</title>
 </head>
@@ -45,11 +46,11 @@
             <img src="assets/mini.png" height="200px" width="300px">
         </div>
 
-        <p class="text-center" style="font-family: Fredoka One;font-size: 50px;">Bello! coopee pluka!</p>
+        <p class="text-center" style="font-family: Fredoka One;font-size: 50px;">Bello!👋 coopee pluka!</p>
         <p class="text-center" style="font-family: Roboto Mono;font-size: small;" id="type"></p>
         <textarea id="txt-input" style="font-family: Roboto Mono;"
             class="shadow-lg mb-4 mx-auto text-center z-depth-1 shadow-textarea" cols="30" rows="7"
-            placeholder="Get your form of language translated to Banana! Minions are here to help you!"></textarea>
+            placeholder="Get your form of language translated to Banana! i.e. English to “Minionese”. Minions are here to help you!"></textarea>
 
         <div class="text-center">
             <button type="button" id="btn-clk" onclick="clkHandler()" style="font-family: Roboto Mono;"
@@ -58,6 +59,10 @@
 
         <div id="output" style="font-family: Roboto Mono;"
             class="mt-4 shadow-lg mx-auto text-center z-depth-1 shadow-textarea" cols="30" rows="7" placeholder="">
+        </div>
+
+        <div class="mt-4">
+            <p class="shadow text-center" style="font-family: Roboto Mono;">Did you know?🤔 The minions’ cute🤗 jumbled language “Minionese” is actually a mix of Spanish, English, French and Italian with additional elements of Russian and Korean😮. And they seem to understand English pretty well, too.<img src="https://i.ibb.co/d6Qs853/minion-2.png" height=20px width=20px alt="minion-2" border="0"></p>
         </div>
     </div>
     <script src="app.js" type="text/javascript"></script>

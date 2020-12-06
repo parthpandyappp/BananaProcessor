@@ -3,6 +3,20 @@ var txtInput = document.querySelector("#txt-input")
 var txtOutput = document.querySelector("#output")
 var txt = "We love when someone talk in our language, use the processor below to communicate with us at a greater ease."
 
+//Text to speech//
+let utter = new SpeechSynthesisUtterance();
+utter.lang = 'en-US';
+// utter.text = 'Hello World';
+utter.volume = 0.5;
+
+// event after text has been spoken
+// utter.onend = function() {
+// 	alert('Speech has finished');
+// }
+
+
+
+//End of Text to speech
 
 var i = 0,
     speed = 50;
@@ -26,6 +40,10 @@ function clkHandler() {
     then(json => {
         var translatedText = json.contents.translated;
         txtOutput.innerText = translatedText;
+        utter.text = translatedText
+        // speak
+        window.speechSynthesis.speak(utter);
+
     }).
     catch(ErrorHandler);
 

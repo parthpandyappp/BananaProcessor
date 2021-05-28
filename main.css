@@ -1,5 +1,10 @@
+:root {
+  --primary-color: #fbbf24;
+  --bar-color: #4b5563;
+}
+
 body {
-  background-color: #fbbf24;
+  background-color: var(--primary-color);
 }
 
 textarea {
@@ -33,6 +38,23 @@ li {
   margin: 1rem;
 }
 
+.nav {
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background-color: var(--bar-color);
+  margin: 1rem;
+  font-family: "Fredoka One";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+.nav-header {
+  text-align: left;
+  color: white;
+}
 @media only screen and (max-width: 600px) {
   textarea {
     width: 25rem;
